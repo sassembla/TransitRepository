@@ -17,7 +17,38 @@
 		1309F67D153167D4004C04A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F663153167D4004C04A4 /* UIKit.framework */; };
 		1309F67E153167D4004C04A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F665153167D4004C04A4 /* Foundation.framework */; };
 		1309F686153167D4004C04A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1309F684153167D4004C04A4 /* InfoPlist.strings */; };
-		1309F689153167D4004C04A4 /* TransitRepositoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F688153167D4004C04A4 /* TransitRepositoryTests.m */; };
+		1309F695153167F7004C04A4 /* TransitRepositoryAdopterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F692153167F7004C04A4 /* TransitRepositoryAdopterTests.m */; };
+		1309F696153167F7004C04A4 /* TransitRepositoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F693153167F7004C04A4 /* TransitRepositoryTests.m */; };
+		1309F697153167F7004C04A4 /* TransitRepositoryConnectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F694153167F7004C04A4 /* TransitRepositoryConnectionTests.m */; };
+		1309F69C15316816004C04A4 /* TransitRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F69915316816004C04A4 /* TransitRepository.m */; };
+		1309F69D15316816004C04A4 /* TransitRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F69915316816004C04A4 /* TransitRepository.m */; };
+		1309F69E15316816004C04A4 /* TransitRepositoryConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F69B15316816004C04A4 /* TransitRepositoryConnection.m */; };
+		1309F69F15316816004C04A4 /* TransitRepositoryConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F69B15316816004C04A4 /* TransitRepositoryConnection.m */; };
+		1309F6A215316820004C04A4 /* TransitRepositoryAdopter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F6A115316820004C04A4 /* TransitRepositoryAdopter.m */; };
+		1309F6A315316820004C04A4 /* TransitRepositoryAdopter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F6A115316820004C04A4 /* TransitRepositoryAdopter.m */; };
+		1309F6A915316846004C04A4 /* MessengerIDGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F6A615316846004C04A4 /* MessengerIDGenerator.m */; };
+		1309F6AA15316846004C04A4 /* MessengerIDGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F6A615316846004C04A4 /* MessengerIDGenerator.m */; };
+		1309F6AB15316846004C04A4 /* MessengerSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F6A815316846004C04A4 /* MessengerSystem.m */; };
+		1309F6AC15316846004C04A4 /* MessengerSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F6A815316846004C04A4 /* MessengerSystem.m */; };
+		1309F6B6153168CE004C04A4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6AE153168CE004C04A4 /* MobileCoreServices.framework */; };
+		1309F6B7153168CE004C04A4 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6AF153168CE004C04A4 /* libz.1.1.3.dylib */; };
+		1309F6B8153168CE004C04A4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6B0153168CE004C04A4 /* Security.framework */; };
+		1309F6B9153168CE004C04A4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6B1153168CE004C04A4 /* QuartzCore.framework */; };
+		1309F6BA153168CE004C04A4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6B2153168CE004C04A4 /* SystemConfiguration.framework */; };
+		1309F6BB153168CE004C04A4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6B3153168CE004C04A4 /* CFNetwork.framework */; };
+		1309F6BC153168CE004C04A4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6B4153168CE004C04A4 /* AudioToolbox.framework */; };
+		1309F6BD153168CE004C04A4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6B5153168CE004C04A4 /* Parse.framework */; };
+		1309F6BE153168D6004C04A4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6AE153168CE004C04A4 /* MobileCoreServices.framework */; };
+		1309F6BF153168D6004C04A4 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6AF153168CE004C04A4 /* libz.1.1.3.dylib */; };
+		1309F6C0153168D6004C04A4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6B0153168CE004C04A4 /* Security.framework */; };
+		1309F6C1153168D6004C04A4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6B1153168CE004C04A4 /* QuartzCore.framework */; };
+		1309F6C2153168D6004C04A4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6B2153168CE004C04A4 /* SystemConfiguration.framework */; };
+		1309F6C3153168D6004C04A4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6B3153168CE004C04A4 /* CFNetwork.framework */; };
+		1309F6C4153168D6004C04A4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6B4153168CE004C04A4 /* AudioToolbox.framework */; };
+		1309F6C5153168D6004C04A4 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F6B5153168CE004C04A4 /* Parse.framework */; };
+		1309F6C6153168D6004C04A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1309F667153167D4004C04A4 /* CoreGraphics.framework */; };
+		1309F6C915316925004C04A4 /* TimeMine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F6C815316925004C04A4 /* TimeMine.m */; };
+		1309F6CA15316961004C04A4 /* TimeMine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1309F6C815316925004C04A4 /* TimeMine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +66,39 @@
 		1309F663153167D4004C04A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1309F665153167D4004C04A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1309F667153167D4004C04A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1309F66B153167D4004C04A4 /* TransitRepository-Info.plist */ = {isa = PBXFileReference; path = "TransitRepository-Info.plist"; sourceTree = "<group>"; };
+		1309F66B153167D4004C04A4 /* TransitRepository-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransitRepository-Info.plist"; sourceTree = "<group>"; };
 		1309F66D153167D4004C04A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1309F66F153167D4004C04A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1309F671153167D4004C04A4 /* TransitRepository-Prefix.pch */ = {isa = PBXFileReference; path = "TransitRepository-Prefix.pch"; sourceTree = "<group>"; };
-		1309F672153167D4004C04A4 /* TRAppDelegate.h */ = {isa = PBXFileReference; path = TRAppDelegate.h; sourceTree = "<group>"; };
+		1309F671153167D4004C04A4 /* TransitRepository-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TransitRepository-Prefix.pch"; sourceTree = "<group>"; };
+		1309F672153167D4004C04A4 /* TRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAppDelegate.h; sourceTree = "<group>"; };
 		1309F673153167D4004C04A4 /* TRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
 		1309F67A153167D4004C04A4 /* TransitRepositoryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitRepositoryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1309F67B153167D4004C04A4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		1309F683153167D4004C04A4 /* TransitRepositoryTests-Info.plist */ = {isa = PBXFileReference; path = "TransitRepositoryTests-Info.plist"; sourceTree = "<group>"; };
+		1309F683153167D4004C04A4 /* TransitRepositoryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransitRepositoryTests-Info.plist"; sourceTree = "<group>"; };
 		1309F685153167D4004C04A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1309F687153167D4004C04A4 /* TransitRepositoryTests.h */ = {isa = PBXFileReference; path = TransitRepositoryTests.h; sourceTree = "<group>"; };
-		1309F688153167D4004C04A4 /* TransitRepositoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitRepositoryTests.m; sourceTree = "<group>"; };
+		1309F692153167F7004C04A4 /* TransitRepositoryAdopterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitRepositoryAdopterTests.m; sourceTree = "<group>"; };
+		1309F693153167F7004C04A4 /* TransitRepositoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitRepositoryTests.m; sourceTree = "<group>"; };
+		1309F694153167F7004C04A4 /* TransitRepositoryConnectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitRepositoryConnectionTests.m; sourceTree = "<group>"; };
+		1309F69815316816004C04A4 /* TransitRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitRepository.h; sourceTree = "<group>"; };
+		1309F69915316816004C04A4 /* TransitRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitRepository.m; sourceTree = "<group>"; };
+		1309F69A15316816004C04A4 /* TransitRepositoryConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitRepositoryConnection.h; sourceTree = "<group>"; };
+		1309F69B15316816004C04A4 /* TransitRepositoryConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitRepositoryConnection.m; sourceTree = "<group>"; };
+		1309F6A015316820004C04A4 /* TransitRepositoryAdopter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitRepositoryAdopter.h; sourceTree = "<group>"; };
+		1309F6A115316820004C04A4 /* TransitRepositoryAdopter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitRepositoryAdopter.m; sourceTree = "<group>"; };
+		1309F6A515316846004C04A4 /* MessengerIDGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessengerIDGenerator.h; sourceTree = "<group>"; };
+		1309F6A615316846004C04A4 /* MessengerIDGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessengerIDGenerator.m; sourceTree = "<group>"; };
+		1309F6A715316846004C04A4 /* MessengerSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessengerSystem.h; sourceTree = "<group>"; };
+		1309F6A815316846004C04A4 /* MessengerSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessengerSystem.m; sourceTree = "<group>"; };
+		1309F6AE153168CE004C04A4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1309F6AF153168CE004C04A4 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		1309F6B0153168CE004C04A4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1309F6B1153168CE004C04A4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1309F6B2153168CE004C04A4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1309F6B3153168CE004C04A4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1309F6B4153168CE004C04A4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1309F6B5153168CE004C04A4 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../ShikamusumeAwoniyoshi/Parse.framework; sourceTree = "<group>"; };
+		1309F6C715316925004C04A4 /* TimeMine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeMine.h; sourceTree = "<group>"; };
+		1309F6C815316925004C04A4 /* TimeMine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeMine.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +106,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1309F6B6153168CE004C04A4 /* MobileCoreServices.framework in Frameworks */,
+				1309F6B7153168CE004C04A4 /* libz.1.1.3.dylib in Frameworks */,
+				1309F6B8153168CE004C04A4 /* Security.framework in Frameworks */,
+				1309F6B9153168CE004C04A4 /* QuartzCore.framework in Frameworks */,
+				1309F6BA153168CE004C04A4 /* SystemConfiguration.framework in Frameworks */,
+				1309F6BB153168CE004C04A4 /* CFNetwork.framework in Frameworks */,
+				1309F6BC153168CE004C04A4 /* AudioToolbox.framework in Frameworks */,
+				1309F6BD153168CE004C04A4 /* Parse.framework in Frameworks */,
 				1309F664153167D4004C04A4 /* UIKit.framework in Frameworks */,
 				1309F666153167D4004C04A4 /* Foundation.framework in Frameworks */,
 				1309F668153167D4004C04A4 /* CoreGraphics.framework in Frameworks */,
@@ -64,9 +124,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1309F67C153167D4004C04A4 /* SenTestingKit.framework in Frameworks */,
+				1309F6BE153168D6004C04A4 /* MobileCoreServices.framework in Frameworks */,
+				1309F6BF153168D6004C04A4 /* libz.1.1.3.dylib in Frameworks */,
+				1309F6C0153168D6004C04A4 /* Security.framework in Frameworks */,
+				1309F6C1153168D6004C04A4 /* QuartzCore.framework in Frameworks */,
+				1309F6C2153168D6004C04A4 /* SystemConfiguration.framework in Frameworks */,
+				1309F6C3153168D6004C04A4 /* CFNetwork.framework in Frameworks */,
+				1309F6C4153168D6004C04A4 /* AudioToolbox.framework in Frameworks */,
+				1309F6C5153168D6004C04A4 /* Parse.framework in Frameworks */,
 				1309F67D153167D4004C04A4 /* UIKit.framework in Frameworks */,
 				1309F67E153167D4004C04A4 /* Foundation.framework in Frameworks */,
+				1309F6C6153168D6004C04A4 /* CoreGraphics.framework in Frameworks */,
+				1309F67C153167D4004C04A4 /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +164,14 @@
 		1309F662153167D4004C04A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1309F6AE153168CE004C04A4 /* MobileCoreServices.framework */,
+				1309F6AF153168CE004C04A4 /* libz.1.1.3.dylib */,
+				1309F6B0153168CE004C04A4 /* Security.framework */,
+				1309F6B1153168CE004C04A4 /* QuartzCore.framework */,
+				1309F6B2153168CE004C04A4 /* SystemConfiguration.framework */,
+				1309F6B3153168CE004C04A4 /* CFNetwork.framework */,
+				1309F6B4153168CE004C04A4 /* AudioToolbox.framework */,
+				1309F6B5153168CE004C04A4 /* Parse.framework */,
 				1309F663153167D4004C04A4 /* UIKit.framework */,
 				1309F665153167D4004C04A4 /* Foundation.framework */,
 				1309F667153167D4004C04A4 /* CoreGraphics.framework */,
@@ -106,6 +183,13 @@
 		1309F669153167D4004C04A4 /* TransitRepository */ = {
 			isa = PBXGroup;
 			children = (
+				1309F6A41531682E004C04A4 /* support */,
+				1309F6A015316820004C04A4 /* TransitRepositoryAdopter.h */,
+				1309F6A115316820004C04A4 /* TransitRepositoryAdopter.m */,
+				1309F69815316816004C04A4 /* TransitRepository.h */,
+				1309F69915316816004C04A4 /* TransitRepository.m */,
+				1309F69A15316816004C04A4 /* TransitRepositoryConnection.h */,
+				1309F69B15316816004C04A4 /* TransitRepositoryConnection.m */,
 				1309F672153167D4004C04A4 /* TRAppDelegate.h */,
 				1309F673153167D4004C04A4 /* TRAppDelegate.m */,
 				1309F66A153167D4004C04A4 /* Supporting Files */,
@@ -127,8 +211,9 @@
 		1309F681153167D4004C04A4 /* TransitRepositoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				1309F687153167D4004C04A4 /* TransitRepositoryTests.h */,
-				1309F688153167D4004C04A4 /* TransitRepositoryTests.m */,
+				1309F692153167F7004C04A4 /* TransitRepositoryAdopterTests.m */,
+				1309F693153167F7004C04A4 /* TransitRepositoryTests.m */,
+				1309F694153167F7004C04A4 /* TransitRepositoryConnectionTests.m */,
 				1309F682153167D4004C04A4 /* Supporting Files */,
 			);
 			path = TransitRepositoryTests;
@@ -141,6 +226,19 @@
 				1309F684153167D4004C04A4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1309F6A41531682E004C04A4 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				1309F6C715316925004C04A4 /* TimeMine.h */,
+				1309F6C815316925004C04A4 /* TimeMine.m */,
+				1309F6A515316846004C04A4 /* MessengerIDGenerator.h */,
+				1309F6A615316846004C04A4 /* MessengerIDGenerator.m */,
+				1309F6A715316846004C04A4 /* MessengerSystem.h */,
+				1309F6A815316846004C04A4 /* MessengerSystem.m */,
+			);
+			name = support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +347,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1309F6CA15316961004C04A4 /* TimeMine.m in Sources */,
 				1309F670153167D4004C04A4 /* main.m in Sources */,
 				1309F674153167D4004C04A4 /* TRAppDelegate.m in Sources */,
+				1309F69C15316816004C04A4 /* TransitRepository.m in Sources */,
+				1309F69E15316816004C04A4 /* TransitRepositoryConnection.m in Sources */,
+				1309F6A215316820004C04A4 /* TransitRepositoryAdopter.m in Sources */,
+				1309F6A915316846004C04A4 /* MessengerIDGenerator.m in Sources */,
+				1309F6AB15316846004C04A4 /* MessengerSystem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +362,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1309F689153167D4004C04A4 /* TransitRepositoryTests.m in Sources */,
+				1309F695153167F7004C04A4 /* TransitRepositoryAdopterTests.m in Sources */,
+				1309F696153167F7004C04A4 /* TransitRepositoryTests.m in Sources */,
+				1309F697153167F7004C04A4 /* TransitRepositoryConnectionTests.m in Sources */,
+				1309F69D15316816004C04A4 /* TransitRepository.m in Sources */,
+				1309F69F15316816004C04A4 /* TransitRepositoryConnection.m in Sources */,
+				1309F6A315316820004C04A4 /* TransitRepositoryAdopter.m in Sources */,
+				1309F6AA15316846004C04A4 /* MessengerIDGenerator.m in Sources */,
+				1309F6AC15316846004C04A4 /* MessengerSystem.m in Sources */,
+				1309F6C915316925004C04A4 /* TimeMine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +452,11 @@
 		1309F68D153167D4004C04A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(SRCROOT)/../ShikamusumeAwoniyoshi\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TransitRepository/TransitRepository-Prefix.pch";
 				INFOPLIST_FILE = "TransitRepository/TransitRepository-Info.plist";
@@ -351,6 +468,11 @@
 		1309F68E153167D4004C04A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+					"\"$(SRCROOT)/../ShikamusumeAwoniyoshi\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TransitRepository/TransitRepository-Prefix.pch";
 				INFOPLIST_FILE = "TransitRepository/TransitRepository-Info.plist";
@@ -366,6 +488,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/../ShikamusumeAwoniyoshi\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TransitRepository/TransitRepository-Prefix.pch";
@@ -383,6 +506,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/../ShikamusumeAwoniyoshi\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TransitRepository/TransitRepository-Prefix.pch";

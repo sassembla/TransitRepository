@@ -31,32 +31,89 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+        <h3>Motivation</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>ParseとかBaaS(ggr)を、ObjCから、NSURLConnectionぽく使う為のライブラリです。<br><br>
+          なんでTransit(中継)なの？というと、
+          iOSのアプリケーションとかを作っていて、値調整したいなーとか、実機でテスト実行した値を収集したいなーとかあるのですが、<br><br>
+          それらのためにワザワザKVSとか立ち上げたりAPI作ったりするのが面倒だったため、<br>
+          「いっそin-outが簡単で、後腐れ無い、母艦-iOS間の値渡しの中継点があればいいのに」<br>
+          というモチベで作っています。</p>
+        
+<h3>Usage</h3>
+         <p>
+          DLして解凍して、Parse(https://parse.com/)のアカウントとClientKeyと<br>
+          Parse.frameworkを入れれば、テストが通る、、はずです。
+          </p>
+          
+<h3>Input Code</h3>
+          <pre><code>NSString * connectionIdentifier = @"このコネクションをIdentifyする名前";
+              
+TransitRepositoryConnection * transitRepoCon
+    = [[TransitRepositoryConnection alloc]
+              connection:connectionIdentifier withMasterName:@"受け取り主の名前"];
+              
+NSString * val
+              = [[NSString alloc]initWithString:@"something"];
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+NSString * key = @"キー";
+              
+[transitRepoCon save:val withTypeIdentifier:key];
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Parseとかと通信し、値(この場合saveDictオブジェクト)を特定のKey-Valueの形で保存。<br><br>
+          transitRepoConは非同期で通信し、通信完了後、受け渡しブロックを抜けると勝手に消えます。<br><br>
+          
+          通信結果は、　withMasterName:@"値の受け取り主の名前" で指定した<br>MessengerSystemに届きます。<br><br>
+          
+          transitRepoCon消滅時、値のポインタや、通信結果を保持しているポインタも消えるので、<br>
+          受け取ったらまあその時点で受け取りオブジェクト作るとかしてください。
+          </p>
 
-<h3>Designer Templates</h3>
+          
+<h3>Observe Code</h3>
+          <p>受け取りコードは下記。
+          </p>
+          <pre><code>messenger = [[MessengerSystem alloc]initWithBodyID:self 
+              withSelector:@selector(receiver:) withName:@"受け取り主の名前"];
+              
+- (void) receiver:(NSNotification * )notif {
+    NSString * exec = [messenger getExecFromNotification:notif];
+    NSDictionary * dict
+              = [messenger getTagValueDictionaryFromNotification:notif];
+            
+    if ([exec isEqualToString:TRANSIT_CONNECTION_EXEC_SAVED]) {
+        NSAssert([dict valueForKey:@"result"], @"result required");
+        m_result
+         = [[NSDictionary alloc]initWithDictionary:[dict valueForKey:@"result"]];
+    }
+}
+          </code></pre><br>
+          
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h3>Dependencies</h3>
 
-<h3>Rather Drive Stick?</h3>
+<p>NSNotificationを使ったメッセージング処理を行うライブラリ<br>
+          MessengerSystem(http://sassembla.github.com/MessengerSystem/)<br>
+          と、<br><br>
+          コメントに時間制限をつけるライブラリ<br>
+          TimeMine(個別未公開)<br><br>
+          に依存しています。<br>
+          Repo上に入っているTimeMineは、使いたければ適当に取り除いてください。</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h3>API</h3>
 
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
+<p>とりあえずCRUDはそろえました。<br>
+          APIは、テスト(http://bit.ly/HUqzwK)見た方が速いと思います。</p>
+          
+<h3>License</h3>          
+          <p>
+          公式になにかとして供給する予定は今の所ありません。
+          </p>
+          
 <h3>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact support@github.com and we’ll help you sort it out.</p>
+<p>いまのところParseにしか対応してないので、他のサービス使いたいわー、とかあれば、連絡ください。</p>
       </section>
     </div>
 
